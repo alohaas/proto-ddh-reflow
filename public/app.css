@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+/* line 6, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/utils/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,30 +24,30 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 27, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+/* line 27, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/utils/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 31, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+/* line 31, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/utils/_reset.scss */
 body {
   line-height: 1; }
 
-/* line 34, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+/* line 34, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/utils/_reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 37, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+/* line 37, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/utils/_reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 40, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+/* line 40, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/utils/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 45, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+/* line 45, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/utils/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -906,16 +906,16 @@ strong {
 #proto-ddh-create .tx-sub {
   color: #ffffff; }
 
-/* line 9, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+/* line 9, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/__main.scss */
 #proto-ddh {
   font-family: sans-serif;
   color: #333333; }
 
-/* line 14, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+/* line 14, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/__main.scss */
 #proto-ddh a {
   text-decoration: none; }
 
-/* line 15, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+/* line 15, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/__main.scss */
 #proto-ddh a:not(.btn) {
   color: #60a5da; }
 

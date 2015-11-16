@@ -1,15 +1,3 @@
-@import 'reset';
-@import 'colors';
-@import 'vars';
-@import 'mixins';
+@import 'utils/_main.scss';
 @import 'objects/_main.scss';
 @import 'app/_main.scss';
-
-
-#proto-ddh {
-  font-family: sans-serif;
-  color: $slate;
-}
-
-#proto-ddh a           { text-decoration: none; }
-#proto-ddh a:not(.btn) { color: $blue-light; }
