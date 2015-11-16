@@ -1,0 +1,819 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 37, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 40, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+    DuckDuckGo Icons!
+    
+    Requires that you compile the icon font yourself and
+    serve it via @font-face under the name 'ddg-serp-icons'
+*/
+/*
+    Buttons
+    (Most of the basics are handled by litestrap - this is for custom stuff)
+*/
+/* line 5, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn, .button,
+.btn--icon,
+.btn--top {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  outline: none !important;
+  background-color: #fafafa;
+  border-color: #dddddd;
+  line-height: 2;
+  font-weight: normal;
+  font-size: 1em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #333333; }
+  /* line 19, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn:hover, .button:hover, .btn:focus, .button:focus,
+  .btn--icon:hover,
+  .btn--top:hover,
+  .btn--icon:focus,
+  .btn--top:focus {
+    text-decoration: none !important;
+    color: #333333; }
+
+/* line 25, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn:active, .button:active {
+  background-color: #fafafa;
+  border-color: #fafafa; }
+
+/* line 34, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn.is-disabled, .button.is-disabled {
+  border-color: #c3c3c3;
+  background-color: #c3c3c3;
+  color: #eee; }
+
+/* line 39, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn.is-active, .button.is-active {
+  border-color: transparent;
+  background: #666666;
+  color: #ffffff;
+  font-weight: 300; }
+
+/* line 48, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--primary, .is-checked .frm__switch__label {
+  background-color: #60a5da;
+  border-color: #60a5da;
+  color: #ffffff;
+  font-weight: 600; }
+  /* line 55, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--primary:hover, .is-checked .frm__switch__label:hover, .btn--primary:focus, .is-checked .frm__switch__label:focus {
+    color: #ffffff;
+    background-color: #4495d4;
+    border-color: #4495d4; }
+  /* line 60, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--primary:active, .is-checked .frm__switch__label:active {
+    background-color: #3a7fb4;
+    border-color: #3a7fb4; }
+
+/* line 70, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--primary--alt {
+  background-color: #4495d4;
+  border-color: #4495d4;
+  color: #ffffff;
+  font-weight: 600; }
+  /* line 77, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--primary--alt:hover, .btn--primary--alt:focus {
+    color: #ffffff;
+    background-color: #3a7fb4;
+    border-color: #3a7fb4; }
+  /* line 82, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--primary--alt:active {
+    background-color: #27567a;
+    border-color: #27567a; }
+
+/* line 88, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--critical {
+  background-color: #e37151;
+  border-color: #e37151;
+  color: #ffffff;
+  font-weight: 600; }
+  /* line 95, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--critical:hover, .btn--critical:focus {
+    color: #ffffff;
+    background-color: #de5833;
+    border-color: #de5833; }
+  /* line 100, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--critical:active {
+    background-color: #bd4b2b;
+    border-color: #bd4b2b; }
+
+/* line 107, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--secondary {
+  border-color: #dddddd;
+  background-color: #f2f2f2;
+  color: #666666;
+  font-weight: 600; }
+  /* line 114, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--secondary:hover, .btn--secondary:focus {
+    background-color: #60a5da;
+    border-color: #4495d4;
+    color: #ffffff; }
+  /* line 119, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--secondary:active {
+    background-color: #4495d4;
+    color: #ffffff; }
+
+/* line 126, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--alt {
+  border-color: #c3c3c3;
+  background-color: #e5e5e5;
+  color: #666666; }
+  /* line 131, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--alt:hover, .btn--alt:focus {
+    color: #666666;
+    background-color: #d8d8d8; }
+  /* line 135, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--alt:active {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5; }
+
+/* line 141, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--wire {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  transition: none;
+  background: none;
+  background-color: transparent;
+  font-weight: normal;
+  border: 1px solid #dddddd;
+  color: #aaaaaa; }
+  /* line 150, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--wire:hover, .btn--wire:focus {
+    border-color: #aaaaaa;
+    background-color: #aaaaaa;
+    color: #ffffff; }
+
+/* line 157, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--wire--hero {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff; }
+  /* line 164, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--wire--hero:hover, .btn--wire--hero:focus {
+    border-color: #ffffff;
+    background: none;
+    background-color: transparent;
+    color: #ffffff; }
+
+/* line 172, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--wire--dark {
+  border-color: #333333;
+  color: #333333; }
+  /* line 176, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn--wire--dark:hover {
+    border-color: #333333;
+    background-color: #333333; }
+
+/* line 182, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--icon,
+.btn--top {
+  font-family: 'ddg-serp-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none !important;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: background-color, 0.1s, ease;
+  -webkit-transition: background-color, 0.1s, ease;
+  -o-transition: background-color, 0.1s, ease;
+  transition: background-color, 0.1s, ease;
+  -moz-transition: color, 0.1s, ease;
+  -webkit-transition: color, 0.1s, ease;
+  -o-transition: color, 0.1s, ease;
+  transition: color, 0.1s, ease;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  position: relative;
+  width: 33px;
+  height: 33px;
+  line-height: 34px;
+  text-indent: 1px;
+  font-size: 16px; }
+  /* line 212, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .no-touch .btn--icon:hover, .no-touch
+  .btn--top:hover, .no-touch .btn--icon:focus, .no-touch
+  .btn--top:focus,
+  .no-js .btn--icon:hover,
+  .no-js
+  .btn--top:hover,
+  .no-js .btn--icon:focus,
+  .no-js
+  .btn--top:focus {
+    color: white;
+    background-color: #6d6d6d; }
+  /* line 217, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .no-touch .btn--icon:active, .no-touch
+  .btn--top:active,
+  .no-js .btn--icon:active,
+  .no-js
+  .btn--top:active {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    color: white;
+    background-color: #555555; }
+
+/* line 230, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn__icon,
+.btn__icon--sm {
+  margin-right: 0.125rem;
+  vertical-align: middle;
+  margin-top: -0.125rem;
+  max-height: 1em;
+  max-width: 1em; }
+
+/* line 238, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn__icon {
+  margin-left: -0.25rem;
+  font-size: 1.5em; }
+
+/* line 242, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn__icon--sm {
+  font-size: 16px;
+  margin-left: -0.25rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: -0.05em; }
+
+/* line 250, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn--inline {
+  display: inline;
+  line-height: inherit;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  top: -1px; }
+
+/* line 258, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+.btn-stack {
+  margin-bottom: -0.5rem;
+  padding: 0; }
+  /* line 261, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_buttons.scss */
+  .btn-stack .btn {
+    display: block;
+    margin-bottom: 0.5rem; }
+
+/*
+    Forms
+
+    For anything that isn't the search form
+    (Newsletter signup, etc)
+*/
+/* line 11, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm {
+  display: block; }
+
+/* line 14, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__label {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #333333; }
+
+/* line 20, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__label__chk {
+  margin-top: 0.4em;
+  margin-right: 0.5rem;
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 26, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__label__txt {
+  display: inline-block;
+  overflow: hidden; }
+
+/* line 31, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__text,
+.frm__input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1em;
+  background-color: #f7f7f7;
+  border: 1px solid #e6e6e6;
+  color: #333333;
+  outline: none; }
+
+/* line 44, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__input--disabled {
+  background-color: #e6e6e6; }
+
+/* line 48, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__input {
+  height: 2em;
+  line-height: 2em;
+  padding-left: 0.8rem; }
+
+/* line 53, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__input--clearable {
+  position: relative; }
+  /* line 56, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .frm__input--clearable .frm__input {
+    padding-right: 2em; }
+  /* line 59, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .frm__input--clearable .frm__input__clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: .8em;
+    line-height: 2.6em;
+    padding: 0 1rem;
+    color: #888888;
+    cursor: pointer; }
+    /* line 68, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+    .frm__input--clearable .frm__input__clear:hover {
+      color: #333333; }
+
+/* line 76, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__text {
+  padding: 0.8rem; }
+
+/* line 80, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  line-height: 2.2;
+  height: 2.35em;
+  border: 1px solid #dddddd;
+  background-color: #fafafa;
+  color: #333333;
+  padding: 0;
+  vertical-align: middle;
+  margin-bottom: 0;
+  cursor: pointer; }
+  /* line 101, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .frm__select:hover {
+    background-color: #ffffff; }
+  /* line 105, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .frm__select select {
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0 28px 0 0.75rem;
+    position: relative;
+    display: block;
+    font-size: 1em;
+    line-height: inherit;
+    min-width: 10em;
+    width: 140% !important;
+    height: 2.2em !important;
+    outline: none !important;
+    border: none !important; }
+    /* line 125, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+    .lt-ie9 .frm__select select {
+      padding-bottom: 0.4em; }
+  /* line 130, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .frm__select:after {
+    font-family: 'ddg-serp-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none !important;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\76";
+    margin-top: -5px;
+    font-size: 12px;
+    line-height: 1;
+    pointer-events: none;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%; }
+
+/* line 149, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__select--no-first select option:first-child {
+  display: none; }
+
+/* line 154, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__buttons {
+  clear: both;
+  padding-top: 1rem; }
+  /* line 157, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .frm__buttons .frm__btn {
+    margin-left: 0.5rem; }
+
+/* line 161, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__btn {
+  min-width: 7em;
+  height: 2em; }
+
+/* line 165, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__switch {
+  position: relative; }
+
+/* line 168, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__switch__inp {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 181, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__switch-on {
+  display: none; }
+  /* line 183, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .is-checked .frm__switch-on {
+    display: block; }
+
+/* line 187, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__switch-off {
+  display: block; }
+  /* line 189, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .is-checked .frm__switch-off {
+    display: none; }
+
+/* line 193, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__color__swatch {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 2em;
+  border: 1px solid #e6e6e6; }
+
+/* line 204, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm__hr {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 1px solid #eaeaea; }
+
+/* line 210, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm--newsletter .frm__input {
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  vertical-align: top;
+  width: 60%;
+  max-width: 24em;
+  height: 2.5em;
+  line-height: 2;
+  font-weight: 600; }
+
+/* line 219, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm--newsletter .frm__btn {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 2.5em; }
+
+/* line 227, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm--newsletter__chks {
+  text-align: center;
+  margin: 1.25rem auto 0;
+  font-size: 1em;
+  min-width: 20em;
+  width: 70%; }
+  /* line 233, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+  .frm--newsletter__chks .frm__label {
+    display: inline-block;
+    margin: 0 1.25rem;
+    text-align: left;
+    min-width: 8em; }
+
+/* line 240, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm--newsletter__frq {
+  color: #888888;
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal; }
+
+/* line 250, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm--vrt .frm__label,
+.frm--vrt .frm__input,
+.frm--vrt .frm__text {
+  display: block;
+  width: 100%; }
+
+/* line 257, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/objects/_forms.scss */
+.frm--vrt .frm__label {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem; }
+
+/* line 24, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+#proto-ddh {
+  font-family: sans-serif;
+  color: #333333; }
+
+/* line 29, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+#proto-ddh a {
+  text-decoration: none; }
+
+/* line 35, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.layout-outer {
+  display: block;
+  width: 100%; }
+
+/* line 40, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+section.layout-outer,
+footer.layout-outer {
+  padding: 5em 0; }
+
+/* line 45, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.layout-inner {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+/* line 51, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.col {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 56, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.col--25 {
+  width: 23.7%;
+  margin: 0 0.5%; }
+
+/* line 57, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.col--33 {
+  width: 31.7%;
+  margin: 0 1%; }
+
+/* line 59, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.col--25:first-of-type,
+.col--33:first-of-type {
+  margin-left: 0; }
+
+/* line 61, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.col--25:last-of-type,
+.col--33:last-of-type {
+  margin-right: 0; }
+
+/* line 67, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.tx-heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 1em; }
+
+/* line 73, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.tx-heading--sm {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 1em; }
+
+/* line 80, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.tx-sub {
+  color: #888888;
+  margin-bottom: 2em; }
+
+/* line 85, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.tx-sub--lg {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1em; }
+
+/* line 91, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.tx-tiny {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: #999999; }
+
+/* line 97, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.tx-center {
+  text-align: center; }
+
+/* line 100, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.icon--circle {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 2em;
+  background-color: #d0d0d0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%; }
+
+/* line 112, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.bg-white {
+  background-color: #ffffff; }
+
+/* line 113, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.bg-silver-light {
+  background-color: #f7f7f7; }
+
+/* line 114, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.bg-silver-dark {
+  background-color: #ededed; }
+
+/* line 115, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.bg-blue-light {
+  background-color: #60a5da; }
+
+/* line 116, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.bg-silver-dark {
+  background-color: #ededed; }
+
+/* line 117, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.bg-slate-light {
+  background-color: #666666; }
+
+/* line 119, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.tx-white {
+  color: #ffffff; }
+
+/* line 123, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+#proto-nav {
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0; }
+
+/* line 127, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.nav-items {
+  position: relative;
+  padding: 1.75em 0; }
+
+/* line 132, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.85em; }
+
+/* line 138, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.nav-item a:not(.btn) {
+  margin-right: 2em;
+  color: #333333; }
+
+/* line 143, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.btn--primary--nav {
+  position: absolute;
+  right: 0;
+  top: 1.1em;
+  padding: 0.5em 1em; }
+
+/* line 152, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.btn {
+  padding: 0.5em 1em;
+  display: inline-block; }
+
+/* line 157, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.btn--wire--blue {
+  color: #60a5da;
+  border-color: #60a5da;
+  padding: 0.5em 1.5em;
+  margin: 1em 0;
+  -moz-transition: 0.1s, all, ease;
+  -webkit-transition: 0.1s, all, ease;
+  -o-transition: 0.1s, all, ease;
+  transition: 0.1s, all, ease; }
+
+/* line 165, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.btn--wire--blue:hover {
+  color: #ffffff;
+  background-color: #60a5da;
+  border-color: #60a5da; }
+
+/* line 172, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.btn--primary--nav {
+  position: absolute;
+  right: 0;
+  top: 1.1em; }
+
+/* line 178, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-types {
+  text-align: left;
+  margin-top: 2em; }
+
+/* line 183, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-type {
+  height: 250px;
+  border: 1px solid #c3c3c3;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 189, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-type-img {
+  height: 50%;
+  background-color: #b3d4ed; }
+
+/* line 194, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-type-info {
+  padding: 1em; }
+
+/* line 198, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-tests {
+  margin-left: 1.5em;
+  margin-top: 0.3em; }
+
+/* line 203, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-ways {
+  margin-top: 4em; }
+
+/* line 207, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-ways p {
+  padding: 0 3em; }
+
+/* line 210, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-ways h5 {
+  margin-bottom: 1em; }
+
+/* line 214, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/main.scss */
+.ia-coms {
+  margin: 4em 0; }
+
+
+/*# sourceMappingURL=app.css.map*/

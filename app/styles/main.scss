@@ -1,0 +1,216 @@
+// $bg: black;
+// $tx: white;
+//
+// $tx-root: 16px;
+//
+// body {
+//   font-family: Helvetica, sans-serif;
+//   font-size: $tx-root;
+//   background: $bg;
+//   color: $tx;
+// }
+//
+// h1 {
+//   font-size: 2em;
+//   margin: 0.5em 0 1em;
+// }
+
+@import 'reset';
+@import 'colors';
+@import 'vars';
+@import 'mixins';
+@import 'objects/_main.scss';
+
+#proto-ddh {
+  font-family: sans-serif;
+  color: $slate;
+}
+
+#proto-ddh a {
+  text-decoration: none;
+}
+
+// Layout
+
+.layout-outer {
+  display: block;
+  width: 100%;
+}
+
+section.layout-outer,
+footer.layout-outer {
+  padding: 5em 0;;
+}
+
+.layout-inner {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col--25                { width: 23.7%; margin: 0 0.5%; }
+.col--33                { width: 31.7%; margin: 0 1%; }
+
+.col--25:first-of-type,
+.col--33:first-of-type  { margin-left: 0; }
+.col--25:last-of-type,
+.col--33:last-of-type   { margin-right: 0; }
+
+
+// Text
+
+.tx-heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.tx-heading--sm {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 1em;
+}
+
+.tx-sub {
+  color: $grey-dark;
+  margin-bottom: 2em;
+}
+
+.tx-sub--lg {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.tx-tiny {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: $grey;
+}
+
+.tx-center { text-align: center; }
+
+
+.icon--circle {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 2em;
+  background-color: $platinum-dark;
+  @include border-radius(100%);
+}
+
+
+// Colors
+
+.bg-white        { background-color: $white; }
+.bg-silver-light { background-color: $silver-light; }
+.bg-silver-dark  { background-color: $silver-dark; }
+.bg-blue-light   { background-color: $blue-light; }
+.bg-silver-dark  { background-color: $silver-dark; }
+.bg-slate-light  { background-color: $slate-light; }
+
+.tx-white { color: $white;}
+
+// Nav stuff
+
+#proto-nav {
+  border-top: 1px solid $platinum-dark;
+  border-bottom: 1px solid $platinum-dark;
+}
+.nav-items {
+  position: relative;
+  padding: 1.75em 0;
+}
+
+.nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+.nav-item a:not(.btn) {
+  margin-right: 2em;
+  color: $slate;
+}
+
+.btn--primary--nav {
+  position: absolute;
+  right: 0;
+  top: 1.1em;
+  padding: 0.5em 1em;
+}
+
+// Section-specific
+
+.btn {
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+.btn--wire--blue {
+  color: $blue-light;
+  border-color: $blue-light;
+  padding: 0.5em 1.5em;
+  margin: 1em 0;
+  @include transition(0.1s, all, ease);
+}
+
+.btn--wire--blue:hover {
+  color: $white;
+  background-color: $blue-light;
+  border-color: $blue-light;
+}
+
+
+.btn--primary--nav {
+  position: absolute;
+  right: 0;
+  top: 1.1em;
+}
+
+.ia-types {
+  text-align: left;
+  margin-top: 2em;
+}
+
+.ia-type {
+  height: 250px;
+  border: 1px solid $platinum-darker;
+  @include border-radius(2px);
+}
+
+.ia-type-img {
+  height: 50%;
+  background-color: $blue-lightest;
+}
+
+.ia-type-info {
+  padding: 1em;
+}
+
+.ia-tests {
+  margin-left: 1.5em;
+  margin-top: 0.3em;
+}
+
+.ia-ways {
+  margin-top: 4em;
+}
+
+.ia-ways p {
+  padding: 0 3em;
+}
+.ia-ways h5 {
+  margin-bottom: 1em;
+}
+
+.ia-coms {
+  margin: 4em 0;
+}
