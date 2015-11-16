@@ -1,0 +1,22 @@
+
+// Nav stuff
+
+#proto-nav {
+  border-top: 1px solid $platinum-dark;
+  border-bottom: 1px solid $platinum-dark;
+}
+.nav-items {
+  position: relative;
+  padding: 1.75em 0;
+}
+
+.nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+.nav-item a:not(.btn) {
+  margin-right: 2em;
+  color: $slate;
+}

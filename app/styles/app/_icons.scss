@@ -1,0 +1,16 @@
+.icon--circle {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 2em;
+  background-color: $platinum-dark;
+  @include border-radius(100%);
+}
+
+.icon--square {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: $platinum-dark;
+  @include border-radius(4px);
+}

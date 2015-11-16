@@ -1,0 +1,34 @@
+// Layout
+
+.layout-outer {
+  display: block;
+  width: 100%;
+}
+
+section.layout-outer,
+footer.layout-outer {
+  padding: 5em 0;;
+}
+
+.layout-inner {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.layout-inner.layout-inner--narrow {
+  max-width: 800px;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col--25                { width: 23.7%; margin: 0 0.5%; }
+.col--33                { width: 31.7%; margin: 0 1%; }
+.col--75                { width: 74.7%; }
+.col--25:first-of-type,
+.col--33:first-of-type  { margin-left: 0; }
+.col--25:last-of-type,
+.col--33:last-of-type   { margin-right: 0; }

@@ -1,0 +1,44 @@
+
+.btn {
+  padding: 0.5em 1em;
+  display: inline-block;
+  @include transition(0.1s, all, ease);
+}
+
+.btn--primary--nav {
+  position: absolute;
+  right: 0;
+  top: 1.1em;
+  padding: 0.5em 1em;
+}
+
+.btn--wire--blue {
+  color: $blue-light;
+  border-color: $blue-light;
+  padding: 0.5em 1.5em;
+  margin: 1em 0;
+}
+
+.btn--wire--blue:hover {
+  color: $white;
+  background-color: $blue-light;
+  border-color: $blue-light;
+}
+
+.btn--primary--dark {
+  background-color: $blue-darker;
+  right: 0;
+  top: 1.1em;
+  font-weight: 400;
+}
+
+.btn--primary--nav {
+  position: absolute;
+  right: 0;
+  top: 1.1em;
+  font-weight: 400;
+}
+
+.btn.ddh-hero__btn {
+  padding: 0.1em 2.5em;
+}

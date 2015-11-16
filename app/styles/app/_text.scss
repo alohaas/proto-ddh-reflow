@@ -1,0 +1,54 @@
+
+// Text
+
+strong { font-weight: 700; }
+
+.tx-hero {
+  font-size: 3em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+.tx-heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.tx-heading--sm {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 1em;
+}
+
+.tx-sub {
+  color: $slate-light;
+  line-height: 1.75em;
+}
+
+.tx-quote {
+  color: $grey;
+  font-size: 1.75em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.layout-inner > .tx-sub {
+  color: $grey-dark;
+  margin-bottom: 2em;
+}
+
+.tx-sub--lg {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.tx-tiny {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: $grey;
+}
+
+.tx-center { text-align: center; }
