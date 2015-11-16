@@ -2,15 +2,17 @@
 // Nav stuff
 
 #proto-nav {
-  position: relative;
-  top: 0;
+  position: absolute;
+  bottom: 0;
+  top: auto;
   border-top: 1px solid $platinum-dark;
   border-bottom: 1px solid $platinum-dark;
 }
 
 #proto-nav.proto-nav--fixed {
   position: fixed;
-
+  top: 0;
+  bottom: auto;
 }
 
 .nav-items {

@@ -796,27 +796,30 @@ strong {
 
 /* line 4, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
 #proto-nav {
-  position: relative;
-  top: 0;
+  position: absolute;
+  bottom: 0;
+  top: auto;
   border-top: 1px solid #d0d0d0;
   border-bottom: 1px solid #d0d0d0; }
 
-/* line 11, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
+/* line 12, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
 #proto-nav.proto-nav--fixed {
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  bottom: auto; }
 
-/* line 17, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
+/* line 18, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
 .nav-items {
   position: relative;
   padding: 1.75em 0; }
 
-/* line 22, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
+/* line 23, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
 .nav-item {
   display: inline-block;
   text-transform: uppercase;
   font-size: 0.85em; }
 
-/* line 28, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
+/* line 29, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_nav.scss */
 #proto-nav .nav-item a:not(.btn) {
   margin-right: 2em;
   color: #333333; }
@@ -835,11 +838,16 @@ strong {
   color: #60a5da; }
 
 /* line 10, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+#proto-hero {
+  padding-bottom: 8em;
+  position: relative; }
+
+/* line 15, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-types {
   text-align: left;
   margin-top: 2em; }
 
-/* line 15, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 20, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-type {
   height: 250px;
   border: 1px solid #c3c3c3;
@@ -848,54 +856,54 @@ strong {
   -o-border-radius: 2px;
   border-radius: 2px; }
 
-/* line 21, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 26, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-type-img {
   height: 50%;
   background-color: #b3d4ed; }
 
-/* line 26, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 31, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-type-info {
   padding: 1em; }
 
-/* line 30, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 35, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-tests {
   margin-left: 1.5em;
   margin-top: 0.3em; }
 
-/* line 35, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 40, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-ways {
   margin-top: 4em; }
 
-/* line 39, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 44, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-ways p {
   padding: 0 3em; }
 
-/* line 42, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 47, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ia-ways h5 {
   margin-bottom: 1em; }
 
-/* line 46, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 51, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ddh-coms {
   margin: 4em 0; }
 
-/* line 50, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 55, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ddh-coms .col--75 {
   margin-bottom: 1em;
   text-align: left; }
 
-/* line 55, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 60, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ddh-coms .col--33 > p {
   padding: 0 2em; }
 
-/* line 59, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 64, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ddh-coms .col--33 .tx-sub:last-of-type {
   margin-top: 1em; }
 
-/* line 63, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 68, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ddh-testimonials {
   padding-top: 5em; }
 
-/* line 67, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 72, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ddh-testimonials::before {
   position: relative;
   top: -5em;
@@ -905,23 +913,23 @@ strong {
   margin: 0 auto;
   border-top: 2px solid #d0d0d0; }
 
-/* line 77, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 82, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .ddh-testimonials .tx-heading--sm {
   margin-bottom: 0.25em; }
 
-/* line 81, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 86, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .testimonial-container {
   width: 100%;
   margin-top: 4em; }
 
-/* line 86, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 91, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 .tx-quote cite {
   display: block;
   margin-top: 1em;
   font-size: 1rem;
   font-weight: normal; }
 
-/* line 93, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
+/* line 98, /Users/OberonVII/Sites/duckduckgo/proto-ddh-reflow/app/styles/app/_sections.scss */
 #proto-ddh-create .tx-sub {
   color: #ffffff; }
 
