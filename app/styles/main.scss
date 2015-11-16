@@ -1,20 +1,3 @@
-// $bg: black;
-// $tx: white;
-//
-// $tx-root: 16px;
-//
-// body {
-//   font-family: Helvetica, sans-serif;
-//   font-size: $tx-root;
-//   background: $bg;
-//   color: $tx;
-// }
-//
-// h1 {
-//   font-size: 2em;
-//   margin: 0.5em 0 1em;
-// }
-
 @import 'reset';
 @import 'colors';
 @import 'vars';
@@ -26,9 +9,8 @@
   color: $slate;
 }
 
-#proto-ddh a {
-  text-decoration: none;
-}
+#proto-ddh a           { text-decoration: none; }
+#proto-ddh a:not(.btn) { color: $blue-light; }
 
 // Layout
 
@@ -48,6 +30,10 @@ footer.layout-outer {
   margin: 0 auto;
 }
 
+.layout-inner.layout-inner--narrow {
+  max-width: 800px;
+}
+
 .col {
   display: inline-block;
   vertical-align: top;
@@ -55,7 +41,7 @@ footer.layout-outer {
 
 .col--25                { width: 23.7%; margin: 0 0.5%; }
 .col--33                { width: 31.7%; margin: 0 1%; }
-
+.col--75                { width: 74.7%; }
 .col--25:first-of-type,
 .col--33:first-of-type  { margin-left: 0; }
 .col--25:last-of-type,
@@ -78,6 +64,18 @@ footer.layout-outer {
 }
 
 .tx-sub {
+  color: $slate-light;
+  line-height: 1.75em;
+}
+
+.tx-quote {
+  color: $grey;
+  font-size: 1.75em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.layout-inner > .tx-sub {
   color: $grey-dark;
   margin-bottom: 2em;
 }
@@ -104,6 +102,14 @@ footer.layout-outer {
   margin-bottom: 2em;
   background-color: $platinum-dark;
   @include border-radius(100%);
+}
+
+.icon--square {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: $platinum-dark;
+  @include border-radius(4px);
 }
 
 
@@ -152,6 +158,7 @@ footer.layout-outer {
 .btn {
   padding: 0.5em 1em;
   display: inline-block;
+  @include transition(0.1s, all, ease);
 }
 
 .btn--wire--blue {
@@ -159,7 +166,6 @@ footer.layout-outer {
   border-color: $blue-light;
   padding: 0.5em 1.5em;
   margin: 1em 0;
-  @include transition(0.1s, all, ease);
 }
 
 .btn--wire--blue:hover {
@@ -168,11 +174,20 @@ footer.layout-outer {
   border-color: $blue-light;
 }
 
+.btn--primary--dark {
+  background-color: $blue-darker;
+  right: 0;
+  top: 1.1em;
+  font-weight: 400;
+}
+
+
 
 .btn--primary--nav {
   position: absolute;
   right: 0;
   top: 1.1em;
+  font-weight: 400;
 }
 
 .ia-types {
@@ -211,6 +226,53 @@ footer.layout-outer {
   margin-bottom: 1em;
 }
 
-.ia-coms {
+.ddh-coms {
   margin: 4em 0;
+}
+
+.ddh-coms .col--75 {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.ddh-coms .col--33 > p {
+  padding: 0 2em;
+}
+
+.ddh-coms .col--33 .tx-sub:last-of-type {
+  margin-top: 1em;
+}
+
+.ddh-testimonials {
+  padding-top: 5em;
+}
+
+.ddh-testimonials::before {
+  position: relative;
+  top: -5em;
+  content: '';
+  display: inline-block;
+  width: 15%;
+  margin: 0 auto;
+  border-top: 2px solid $platinum-dark;
+}
+
+.ddh-testimonials .tx-heading--sm {
+  margin-bottom: 0.25em;
+}
+
+.testimonial-container {
+  width: 100%;
+  margin-top: 4em;
+}
+
+.tx-quote cite {
+  display: block;
+  margin-top: 1em;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#proto-ddh-create .tx-sub {
+  color: $white;
 }
