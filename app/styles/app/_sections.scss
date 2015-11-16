@@ -1,5 +1,11 @@
 // Section-specific
+#proto-ddh {
+  font-family: sans-serif;
+  color: $slate;
+}
 
+#proto-ddh a           { text-decoration: none; }
+#proto-ddh a:not(.btn) { color: $blue-light; }
 
 .ia-types {
   text-align: left;
