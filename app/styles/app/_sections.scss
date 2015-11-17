@@ -1,5 +1,7 @@
 // Section-specific
 #proto-ddh {
+  position: relative;
+  z-index: 1;
   font-family: 'proxima-nova', sans-serif;
   color: $slate;
 }
