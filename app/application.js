@@ -1,8 +1,19 @@
 "use strict";
 
-var $ = require('./jquery');
+var $ = require('./jquery'),
+    ias = require('./ias');
 
 var App = {
+
+  ias: ias,
+
+  items: [
+    {name: 'Learn Brunch'},
+    {name: 'Apply to my projects'},
+    {name:'…'},
+    {name: 'Profit!'}
+  ],
+
   getTop: function(element) {
     var topValue = element.offset().top;
     return topValue;
@@ -32,6 +43,11 @@ var App = {
 
     this.scrollSwitch($nav, 'proto-nav--fixed', navTop);
     this.toggleCounter($toggle);
+
+    var tmpl = require('views/home');
+    var html = tmpl({ ias: App.ias });
+
+    $('#proto-ddh').append(html);
   }
 };
 

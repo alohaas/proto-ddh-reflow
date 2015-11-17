@@ -6,3 +6,6 @@ module.exports = config:
     stylesheets:
       defaultExtension: 'css'
       joinTo: 'app.css'
+    templates:
+      defaultExtension: 'hbs'
+      joinTo: 'app.js'

@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "brunch": "^1.8.5",
+    "handlebars-brunch": "^1.10.1",
     "javascript-brunch": "^1.8.0",
     "sass-brunch": "^1.9.1"
   },
